@@ -9,9 +9,9 @@
     <script src="../jquery-3.0.0.js"></script>
     <script>
         $(function () {
-            $("#products h2.product-name[data-type='mineralwater']").css("background-color", "#2982D0");
-            $("#products h2.product-name[data-type='vitamin']").css("background-color", "#12500F");
-            $("#products h2.product-name[data-type='proteinbar']").css("background-color", "#4E0F50");
+            $("#products h2.product-name[data-type='mineralwater']").css("background-color", "#0000FF");
+            $("#products h2.product-name[data-type='vitamin']").css("background-color", "#00FF00");
+            $("#products h2.product-name[data-type='proteinbar']").css("background-color", "#9400D3");
 
             document.querySelector('#cbVitamins').addEventListener('change',function (evt) {
                 updateProductView("vitamins", evt.target.checked);
@@ -51,6 +51,7 @@
             $(".product-item").has(dataSelectorVal).css('display', bVisible ? "" : "none");
             
         }
+        
         
     </script>
 </head>
@@ -97,7 +98,7 @@
     <!-- #history -->
 
     <section id="products" class="section">
-        <header class="imageheader"></header>
+<!--        <header class="imageheader"></header>-->
         <div class="container">
             <h2 class="headline">Products</h2>
             <p>H+ Sport is <em>dedicated to creating</em> eco-friendly, high-quality, nutrient-rich, nutritional products that <em>enhance active lifestyles</em>. We <a href="#guarantee">guarantee</a> it. Take a look at some of our products.</p>
